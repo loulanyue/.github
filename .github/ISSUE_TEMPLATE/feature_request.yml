@@ -1,0 +1,37 @@
+name: Feature proposal
+description: Propose a maintainable improvement for a concrete use case
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and use case
+      description: Who has this problem, and in which workflow?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe the expected outcome or interface, not only an implementation.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What existing features or workarounds have you tried?
+  - type: textarea
+    id: contribution
+    attributes:
+      label: Contribution
+      description: Describe any testing, documentation, or implementation help you can provide.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched existing Issues and the project roadmap before proposing this change.
+          required: true

@@ -1,0 +1,41 @@
+name: Bug report
+description: Report a reproducible problem in this repository
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What happened, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Minimal reproduction
+      description: Provide the smallest example, commands, or repository that reproduces the issue.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include the project version, operating system, runtime, and relevant tools.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs or evidence
+      description: Add sanitized logs, screenshots, or failing test output if available.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched existing Issues and did not find a duplicate.
+          required: true
+        - label: I removed secrets, credentials, personal paths, and private data.
+          required: true
